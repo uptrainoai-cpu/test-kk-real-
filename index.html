@@ -6,10 +6,10 @@
     <title>KK Real Estate | Premium Living in Jaipur</title>
     <meta name="description" content="Premium Villas & Plots at Hatoj Kalwar Road. RERA Approved.">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com ">
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital ,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
 
     <style>
         /* ===== LUXURY VARIABLES ===== */
@@ -74,14 +74,14 @@
         }
 
         .logo-main img {
-            height: 60px; /* Bigger logo as requested */
+            height: 120px; /* DOUBLED from 60px to 120px */
             width: auto;
             object-fit: contain;
             transition: var(--transition);
         }
 
         header.scrolled .logo-main img {
-            height: 50px;
+            height: 100px; /* DOUBLED from 50px to 100px */
         }
 
         nav { display: flex; align-items: center; gap: 2.5rem; }
@@ -171,13 +171,13 @@
             justify-content: center;
             background: var(--royal-blue);
             overflow: hidden;
-            padding-top: 80px;
+            padding-top: 160px; /* Increased padding to accommodate bigger logo */
         }
 
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80') center/cover;
+            background: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80 ') center/cover;
             opacity: 0.6;
             animation: kenburns 20s infinite alternate;
         }
@@ -200,7 +200,7 @@
 
         /* Circular Logo - Smaller as requested */
         .hero-icon {
-            width: 80px; /* Smaller circular logo */
+            width: 80px;
             height: 80px;
             margin: 0 auto 1.5rem;
             border-radius: 50%;
@@ -394,7 +394,7 @@
 
         .property-card {
             position: sticky;
-            top: 100px;
+            top: 140px; /* Adjusted for bigger header */
             height: 550px;
             margin-bottom: 50px;
             background: white;
@@ -739,7 +739,7 @@
         }
 
         .f-brand img {
-            height: 50px;
+            height: 100px; /* DOUBLED from 50px to 100px */
             margin-bottom: 1.5rem;
             filter: brightness(0) invert(1);
         }
@@ -999,7 +999,7 @@
             .property-card {
                 grid-template-columns: 1fr;
                 height: auto;
-                top: 80px;
+                top: 100px; /* Adjusted for mobile */
             }
             
             .card-visual {
@@ -1070,7 +1070,11 @@
             }
             
             .logo-main img {
-                height: 45px;
+                height: 90px; /* DOUBLED from 45px to 90px for mobile */
+            }
+            
+            header.scrolled .logo-main img {
+                height: 75px; /* DOUBLED from 37.5px to 75px for mobile scrolled */
             }
             
             .hero-content {
@@ -1097,7 +1101,7 @@
             }
             
             .property-card {
-                top: 70px;
+                top: 90px;
                 margin-bottom: 30px;
             }
             
@@ -1142,6 +1146,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .f-brand img {
+                height: 80px; /* Slightly reduced for mobile but still big */
+            }
         }
 
         @media (max-width: 360px) {
@@ -1156,13 +1164,17 @@
             .section-head h2 {
                 font-size: 1.75rem;
             }
+            
+            .logo-main img {
+                height: 80px;
+            }
         }
 
         /* Landscape mode optimization */
         @media (max-height: 600px) and (orientation: landscape) {
             .hero {
                 min-height: auto;
-                padding: 100px 0 50px;
+                padding: 140px 0 50px;
             }
             
             .hero-form-container {
@@ -1180,7 +1192,7 @@
 
     <header id="header">
         <a href="#" class="logo-main">
-            <img src="https://i.ibb.co/hFzQjcPh/logo-2.png" alt="KK Real Estate">
+            <img src="https://i.ibb.co/hFzQjcPh/logo-2.png " alt="KK Real Estate">
         </a>
         
         <nav>
@@ -1189,7 +1201,7 @@
                 <li><a href="#collection">Collection</a></li>
                 <li><a href="#founder">Legacy</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="tel:+917357309663" style="color: var(--gold-dark); font-weight: 700;">
+                <li><a href="tel:+919999999999" style="color: var(--gold-dark); font-weight: 700;">
                     <i class="fas fa-phone"></i> 7357309663
                 </a></li>
             </ul>
@@ -1206,7 +1218,7 @@
         
         <div class="hero-content">
             <div class="hero-icon">
-                <img src="https://i.ibb.co/Lhh2bZH4/png.png" alt="KK Real Estate">
+                <img src="https://i.ibb.co/Lhh2bZH4/png.png " alt="KK Real Estate">
             </div>
             
             <h1>
@@ -1297,7 +1309,7 @@
             <div class="property-card">
                 <div class="card-visual">
                     <span class="badge">Featured</span>
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="3BHK Villa">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80 " alt="3BHK Villa">
                 </div>
                 <div class="card-info">
                     <span class="price-label">Starting From</span>
@@ -1323,7 +1335,7 @@
             <div class="property-card">
                 <div class="card-visual">
                     <span class="badge" style="background: var(--gold-dark);">Best Seller</span>
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Corner House">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80 " alt="Corner House">
                 </div>
                 <div class="card-info">
                     <span class="price-label">Starting From</span>
@@ -1349,7 +1361,7 @@
             <div class="property-card">
                 <div class="card-visual">
                     <span class="badge" style="background: #10b981;">New Launch</span>
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Garden Flat">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80 " alt="Garden Flat">
                 </div>
                 <div class="card-info">
                     <span class="price-label">Starting From</span>
@@ -1375,7 +1387,7 @@
             <div class="property-card">
                 <div class="card-visual">
                     <span class="badge" style="background: #8b5cf6;">Limited</span>
-                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Duplex Villa">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80 " alt="Duplex Villa">
                 </div>
                 <div class="card-info">
                     <span class="price-label">Starting From</span>
@@ -1405,7 +1417,7 @@
         <div class="founder-grid">
             <div class="founder-image-box">
                 <div class="founder-frame"></div>
-                <img src="https://i.ibb.co/nsL3ffgw/Whats-App-Image-2026-01-28-at-7-21-38-PM.jpg" alt="Shiv Pratap Singh">
+                <img src="https://i.ibb.co/nsL3ffgw/Whats-App-Image-2026-01-28-at-7-21-38-PM.jpg " alt="Shiv Pratap Singh">
             </div>
             
             <div class="founder-txt">
@@ -1474,7 +1486,7 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="f-brand">
-                <img src="https://i.ibb.co/hFzQjcPh/logo-2.png" alt="KK Real Estate">
+                <img src="https://i.ibb.co/hFzQjcPh/logo-2.png " alt="KK Real Estate">
                 <p>Redefining luxury living in Jaipur with trust, transparency, and timely delivery. Your dream home at Hatoj - Kalwar Road awaits.</p>
             </div>
             <div class="f-links">
@@ -1601,7 +1613,7 @@ Location: Hatoj / Kalwar Road, Jaipur
 
 Please contact me.`;
             
-            window.open(`https://wa.me/917357309663?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/917357309663?text= ${encodeURIComponent(message)}`, '_blank');
         }
 
         function handleModalSubmit(e) {
@@ -1621,7 +1633,7 @@ Location: Hatoj / Kalwar Road, Jaipur
 
 Please contact me.`;
             
-            window.open(`https://wa.me/917357309663?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/917357309663?text= ${encodeURIComponent(message)}`, '_blank');
             closeModal();
         }
 
