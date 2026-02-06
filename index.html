@@ -657,6 +657,166 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
             color: var(--gold-light);
         }
 
+        /* ===== MISSION SECTION ===== */
+        .mission-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, var(--cream) 100%);
+            padding: 100px 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .mission-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mission-content h6 {
+            color: var(--gold-dark);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .mission-content h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            color: var(--royal-blue);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .mission-content h2 span {
+            color: var(--gold-dark);
+            font-style: italic;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--gold);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: var(--transition);
+        }
+
+        .mission-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .mission-card h4 {
+            color: var(--royal-blue);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .mission-card h4 i {
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+
+        .mission-card p {
+            color: var(--text-gray);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .mission-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mission-visual-inner {
+            position: relative;
+            padding: 3rem;
+            background: var(--royal-blue);
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(10,22,40,0.3);
+        }
+
+        .mission-visual-inner::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: 15px;
+            bottom: 15px;
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            pointer-events: none;
+        }
+
+        .mission-visual-inner i {
+            font-size: 5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            display: block;
+            text-align: center;
+        }
+
+        .mission-visual-inner h3 {
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .mission-visual-inner p {
+            color: var(--gold-light);
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .housing-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212,175,55,0.3);
+        }
+
+        .housing-stat {
+            text-align: center;
+        }
+
+        .housing-stat h5 {
+            color: var(--gold);
+            font-size: 1.75rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.25rem;
+        }
+
+        .housing-stat span {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* ===== LOCATION & STATS ===== */
         .location-section {
             padding: 100px 5%;
@@ -967,6 +1127,7 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
             .property-card { height: 500px; }
             .card-info { padding: 2rem; }
             .founder-grid { gap: 3rem; }
+            .mission-grid { gap: 3rem; }
             .footer-content { gap: 2rem; }
         }
 
@@ -1002,6 +1163,10 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
             .founder-image-box {
                 max-width: 350px;
                 margin: 0 auto;
@@ -1019,6 +1184,8 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
                 gap: 3rem;
             }
             .f-brand p { max-width: 100%; }
+            .mission-visual { order: -1; }
+            .mission-visual-inner { width: 100%; max-width: 400px; }
         }
 
         @media (max-width: 640px) {
@@ -1061,6 +1228,8 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
                 right: 20px;
             }
             .f-brand img { height: 80px; }
+            .mission-card { padding: 1.5rem; }
+            .housing-stats { grid-template-columns: 1fr; gap: 1rem; }
         }
 
         @media (max-width: 360px) {
@@ -1094,6 +1263,7 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
             <ul class="nav-links" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#collection">Collection</a></li>
+                <li><a href="#mission">Mission</a></li>
                 <li><a href="#founder">Legacy</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="tel:+917357309663" style="color: var(--gold-dark); font-weight: 700;">
@@ -1308,6 +1478,54 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
         </div>
     </section>
 
+    <!-- NEW MISSION SECTION -->
+    <section class="mission-section" id="mission">
+        <div class="mission-grid">
+            <div class="mission-content">
+                <h6>Our Purpose</h6>
+                <h2>Our Mission: <span>Housing for All</span></h2>
+                
+                <div class="mission-card">
+                    <h4><i class="fas fa-home"></i> Affordable Living</h4>
+                    <p>In line with PM Awas Yojana's vision, we are committed to providing quality homes at affordable prices to every family in Jaipur. Every Indian deserves a pucca house with basic amenities.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <h4><i class="fas fa-shield-alt"></i> Legal Transparency</h4>
+                    <p>100% RERA approved properties with complete legal verification. Just like government housing schemes ensure transparency, we guarantee clear titles and hassle-free ownership.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <h4><i class="fas fa-hand-holding-heart"></i> Community Building</h4>
+                    <p>Creating not just houses, but thriving communities at Hatoj and Kalwar Road. We focus on sustainable development with proper infrastructure, water, electricity, and connectivity.</p>
+                </div>
+            </div>
+            
+            <div class="mission-visual">
+                <div class="mission-visual-inner">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Aligning with PM Awas Yojana</h3>
+                    <p>"Housing for All" - This is not just a government mission, but our personal commitment to every middle-class family dreaming of their own home.</p>
+                    
+                    <div class="housing-stats">
+                        <div class="housing-stat">
+                            <h5>13+</h5>
+                            <span>Years</span>
+                        </div>
+                        <div class="housing-stat">
+                            <h5>500+</h5>
+                            <span>Families</span>
+                        </div>
+                        <div class="housing-stat">
+                            <h5>100%</h5>
+                            <span>Legal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="founder-section" id="founder">
         <div class="founder-grid">
             <div class="founder-image-box">
@@ -1318,11 +1536,11 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
             <div class="founder-txt">
                 <h6>The Visionary</h6>
                 <h2>Shiv Pratap Singh</h2>
-                <p>Real estate is not just about bricks and mortar; it's about building trust and realizing dreams. With over 15 years in Jaipur's property market, I have dedicated my career to providing 100% legal, transparent, and high-appreciation properties at Hatoj and Kalwar Road.</p>
+                <p>Real estate is not just about bricks and mortar; it's about building trust and realizing dreams. With over 13 years in Jaipur's property market, I have dedicated my career to providing 100% legal, transparent, and high-appreciation properties at Hatoj and Kalwar Road.</p>
                 <p>When you buy with KK Real Estate, you don't just buy a home; you buy peace of mind.</p>
                 
                 <span class="signature">Shiv Pratap Singh</span>
-                <span class="designation">Founder & CEO</span>
+                <span class="designation">Managing Director</span>
             </div>
         </div>
     </section>
@@ -1363,7 +1581,7 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
                     <p>Happy Families</p>
                 </div>
                 <div class="stat-box">
-                    <h3>15+</h3>
+                    <h3>13+</h3>
                     <p>Years Legacy</p>
                 </div>
                 <div class="stat-box">
@@ -1388,6 +1606,7 @@ src="https://www.facebook.com/tr?id=907312655106286&ev=PageView&noscript=1"
                 <h4>Quick Links</h4>
                 <a href="#home">Home</a>
                 <a href="#collection">Properties</a>
+                <a href="#mission">Mission</a>
                 <a href="#founder">Founder</a>
                 <a href="#location">Location</a>
             </div>
